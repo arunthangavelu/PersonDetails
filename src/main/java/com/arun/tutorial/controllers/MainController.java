@@ -19,7 +19,7 @@ public class MainController {
     public ServiceResponse serviceResponse(@RequestParam(name = "person") String personName,
                                            @RequestParam(name = "date") String date) throws ParseException {
         PersonDetails personDetails = new PersonDetails();
-        ServiceResponse serviceResponse = new ServiceResponse();
+        ServiceResponse serviceResponse;
         serviceResponse = personDetails.GetPersonDetails(personName,date);
 
         return serviceResponse;
