@@ -56,7 +56,7 @@ public class MainControllerTest {
 
 
         Assert.assertNotNull(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth());
-        Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth(), "15-11-1987");
+        Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth(), "15-Nov-1987");
         Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getUpcomingBirthday().get(0).getYears(),0);
     }
 
@@ -90,7 +90,7 @@ public class MainControllerTest {
 
 
         Assert.assertNotNull(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth());
-        Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth(), "08-06-2015");
+        Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth(), "08-Jun-2015");
         Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getUpcomingBirthday().get(0).getYears(),0);
     }
 
@@ -132,7 +132,7 @@ public void testRenuScenario()
 
 
             Assert.assertNotNull(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth());
-            Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth(), "21-09-1990");
+            Assert.assertEquals(serviceResponse.getMember().get(0).getBirthDetails().get(0).getDateOfBirth(), "21-Sep-1990");
 
 
         }

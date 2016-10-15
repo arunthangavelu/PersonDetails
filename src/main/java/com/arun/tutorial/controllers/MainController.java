@@ -80,7 +80,8 @@ public class MainController {
     {
         BirthDetails birthDetails = new BirthDetails();
         List<AgeDetails> ageDetails = new ArrayList<>();
-        SimpleDateFormat target = new SimpleDateFormat("dd-MM-yyyy");
+        //Changed Date Format
+        SimpleDateFormat target = new SimpleDateFormat("dd-MMM-yyyy");
         ageDetails.add(populateAgeDetails(name, parsedDate));
 
         List<UpcomingBirthdayDetails> upcomingBirthdayDetails = new ArrayList<>();
